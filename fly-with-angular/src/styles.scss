@@ -12,6 +12,7 @@ body {
   background: linear-gradient(to bottom, #000000 0%,#494e5b 100%);
   font-family: 'Lato', "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
   min-height: 100vh;
+  overflow-y: scroll;
 }
 
 // n is number of stars required
