@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Trip } from '../../models/trip';
-import { FormGroup, FormBuilder, FormControl } from '@angular/forms';
+import { FormGroup, FormBuilder, FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-trips-list',
@@ -45,11 +45,11 @@ export class TripsListComponent implements OnInit {
 
   createForm() {
     this.tripForm = this.fb.group({
-      name: new FormControl(),
-      price: new FormControl(),
-      duration: new FormControl(),
-      description: new FormControl(),
-      imageUrl: new FormControl()
+      name: new FormControl('', Validators.required),
+      price: new FormControl(0, Validators.required),
+      duration: new FormControl('', Validators.required),
+      description: new FormControl('', Validators.required),
+      imageUrl: new FormControl('', Validators.required)
     });
   }
 

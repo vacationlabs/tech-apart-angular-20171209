@@ -45,6 +45,11 @@
           <small id="TripNameHelpBlock" class="form-text text-muted">
             It is best to limit the trip name to about 25 to 30 charatcters.
           </small>
+          <div *ngIf="tripForm.get('name').invalid && (tripForm.get('name').dirty || tripForm.get('name').touched)" class="alert alert-danger">
+            <div *ngIf="tripForm.get('name').errors['required']">
+              Name is required.
+            </div>
+          </div>
         </div>
         <div class="form-group col-md-6">
           <label class="col-form-label" for="formGroupTripCost">Cost</label>
@@ -52,14 +57,29 @@
             <span class="input-group-addon">INR</span>
             <input type="number" class="form-control" id="formGroupTripCost" formControlName="price">
           </div>
+          <div *ngIf="tripForm.get('price').invalid && (tripForm.get('price').dirty || tripForm.get('price').touched)" class="alert alert-danger">
+            <div *ngIf="tripForm.get('price').errors['required']">
+              Cost is required.
+            </div>
+          </div>
         </div>
         <div class="form-group col-md-12">
           <label class="col-form-label" for="formGroupDuration">Duration</label>
           <input type="text" class="form-control" id="formGroupDuration" placeholder="Eg. 12 months" formControlName="duration">
+          <div *ngIf="tripForm.get('duration').invalid && (tripForm.get('duration').dirty || tripForm.get('duration').touched)" class="alert alert-danger">
+            <div *ngIf="tripForm.get('duration').errors['required']">
+              Duration is required.
+            </div>
+          </div>
         </div>
         <div class="form-group col-md-12">
           <label class="col-form-label" for="formGroupDescription">Description</label>
           <textarea type="text" class="form-control" id="formGroupDescription" placeholder="Some description goes here..." formControlName="description"></textarea>
+          <div *ngIf="tripForm.get('description').invalid && (tripForm.get('description').dirty || tripForm.get('description').touched)" class="alert alert-danger">
+            <div *ngIf="tripForm.get('description').errors['required']">
+              Description is required.
+            </div>
+          </div>
         </div>
         <div class="form-group col-md-12">
           <label class="col-form-label" for="formGroupTripImage">Trip image</label>
@@ -67,9 +87,14 @@
           <small id="TripNameHelpBlock" class="form-text text-muted">
             Please add a link to the image
           </small>
+          <div *ngIf="tripForm.get('imageUrl').invalid && (tripForm.get('imageUrl').dirty || tripForm.get('imageUrl').touched)" class="alert alert-danger">
+            <div *ngIf="tripForm.get('imageUrl').errors['required']">
+              Trip image URL is required.
+            </div>
+          </div>
         </div>
         <div class="form-actions">
-          <button class="btn submit-btn" (click)="formSubmitted()" type="button">SUBMIT</button>
+          <button class="btn submit-btn" (click)="formSubmitted()" type="button" [disabled]="tripForm.invalid">SUBMIT</button>
         </div>
       </form>
     </div>
