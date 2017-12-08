@@ -4,26 +4,32 @@
   </div>
 
   <div class="trips-list">
-    <div class="trip">
-      <div class="row">
-        <div class="col-lg-2 col-md-3 col-sm-4 trip-image-container">
-          <img [src]="trip.image_url" class="trip-image">
-        </div>
-        <div class="col-lg-10 col-md-9 col-sm-8 trip-info">
-          <div>
-            <div class="trip-name">{{ trip.name }}</div>
-            <div class="trip-price">{{ trip.price | currency:"USD" }}</div>
+    <div *ngIf="trips.length > 0">
+      <div class="trip" *ngFor="let trip of trips">
+        <div class="row">
+          <div class="col-lg-2 col-md-3 col-sm-4 trip-image-container">
+            <img [src]="trip.image_url" class="trip-image">
           </div>
-          <div class="trip-duration">{{ trip.duration }}</div>
-
-          <div class="row trip-description-container">
-            <div class="col-md-8 trip-description">{{ trip.description }}</div>
-            <div class="col-md-4">
-              <button class="btn btn-lg book-btn">Book Trip</button>
+          <div class="col-lg-10 col-md-9 col-sm-8 trip-info">
+            <div>
+              <div class="trip-name">{{ trip.name }}</div>
+              <div class="trip-price">{{ trip.price | currency:"USD" }}</div>
+            </div>
+            <div class="trip-duration">{{ trip.duration }}</div>
+  
+            <div class="row trip-description-container">
+              <div class="col-md-8 trip-description">{{ trip.description }}</div>
+              <div class="col-md-4">
+                <button class="btn btn-lg book-btn">Book Trip</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+
+    <div *ngIf="trips.length <= 0">
+      No Trips to show
     </div>
   </div>
 </div>
