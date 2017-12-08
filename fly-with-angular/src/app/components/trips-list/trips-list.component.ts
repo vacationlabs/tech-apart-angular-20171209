@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Trip } from '../../models/trip';
+import { FormGroup, FormBuilder, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-trips-list',
@@ -10,6 +11,7 @@ export class TripsListComponent implements OnInit {
 
   title = 'Flights of a Lifetime';
   addTripFormMode = false;
+  tripForm: FormGroup;
 
   trips: Array<Trip> = [
     {
@@ -35,13 +37,37 @@ export class TripsListComponent implements OnInit {
     }
   ];
 
-  constructor() { }
+  constructor(private fb: FormBuilder) { }
 
   ngOnInit() {
+    this.createForm();
+  }
+
+  createForm() {
+    this.tripForm = this.fb.group({
+      name: new FormControl(),
+      price: new FormControl(),
+      duration: new FormControl(),
+      description: new FormControl(),
+      imageUrl: new FormControl()
+    });
   }
 
   toggleDisplayMode() {
     this.addTripFormMode = !this.addTripFormMode;
+  }
+
+  formSubmitted() {
+    const newTrip = {
+      name: this.tripForm.controls.name.value,
+      price: this.tripForm.controls.price.value,
+      duration: this.tripForm.controls.duration.value,
+      description: this.tripForm.controls.description.value,
+      image_url: this.tripForm.controls.imageUrl.value
+    };
+
+    this.trips.push(newTrip);
+    this.toggleDisplayMode();
   }
 
 }
