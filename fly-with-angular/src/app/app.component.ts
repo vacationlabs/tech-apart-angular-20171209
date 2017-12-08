@@ -20,4 +20,13 @@ export class AppComponent {
 
   trips: Array<Trip> = [this.trip, this.trip, this.trip];
 
+  totalMoney = 0;
+  travelCost = 500;
+  pendingAmount = Math.max(this.totalMoney - this.travelCost, 0);
+
+  totalMoneyChanged(value) {
+    this.totalMoney = value;
+    this.pendingAmount = Math.max(this.totalMoney - this.travelCost, 0);
+  }
+
 }

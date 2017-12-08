@@ -18,6 +18,28 @@
   }
 }
 
+.money-form-container {
+  font-size: 20px;
+  margin-bottom: 30px;
+
+  .form-container,
+  .remaining-amount-container {
+    display: inline-block;
+  }
+
+  .form-container {
+    #inputTotalMoney {
+      margin-left: 10px;
+      color: #fff;
+      background: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  .remaining-amount-container {
+    float: right;
+  }
+}
+
 .trip {
   margin-bottom: 30px;
   border-radius: 4px;
