@@ -9,6 +9,7 @@ import { Trip } from '../../models/trip';
 export class TripsListComponent implements OnInit {
 
   title = 'Flights of a Lifetime';
+  addTripFormMode = false;
 
   trips: Array<Trip> = [
     {
@@ -37,6 +38,10 @@ export class TripsListComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  toggleDisplayMode() {
+    this.addTripFormMode = !this.addTripFormMode;
   }
 
 }
