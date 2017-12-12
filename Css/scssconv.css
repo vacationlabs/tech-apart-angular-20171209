@@ -1,0 +1,101 @@
+body {
+  background-color: #333;
+  color: #FFF; }
+
+.header {
+  margin-top: 35px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5); }
+
+.title {
+  display: inline-block;
+  font-size: 38px;
+  font-weight: bold; }
+  @media screen and (max-width: 600px) {
+    .title {
+      font-size: 28px; } }
+
+.add-trip-btn {
+  float: right;
+  margin: 15px;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.2); }
+  @media screen and (max-width: 600px) {
+    .add-trip-btn {
+      margin: 10px;
+      color: #fff;
+      background-color: rgba(255, 255, 255, 0.2);
+      height: 50px;
+      width: 50px;
+      overflow: hidden; } }
+
+.money-form-container {
+  font-size: 20px;
+  margin-bottom: 30px; }
+  .money-form-container .form-container, .money-form-container .remaining-amount-container {
+    display: inline-block; }
+    @media screen and (max-width: 600px) {
+      .money-form-container .form-container, .money-form-container .remaining-amount-container {
+        display: inline-block;
+        font-size: 17px; } }
+  .money-form-container .form-container #inputTotalMoney {
+    float: right;
+    font-size: 10px;
+    margin-left: 10px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.3); }
+  .money-form-container .remaining-amount-container {
+    float: right; }
+    @media screen and (max-width: 600px) {
+      .money-form-container .remaining-amount-container {
+        font-size: 17px;
+        float: left; } }
+
+.trip {
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 1px 24px 0 rgba(255, 255, 255, 0.3);
+  border: solid 1px rgba(255, 255, 255, 0.3); }
+  .trip .trip-image-container {
+    display: inline-block;
+    padding: 10px 10px 10px 35px; }
+    .trip .trip-image-container .trip-image {
+      max-height: 150px;
+      max-width: 150px; }
+      @media screen and (max-width: 600px) {
+        .trip .trip-image-container .trip-image {
+          max-height: 75px;
+          max-width: 75px;
+          margin-left: 120px; } }
+  .trip .trip-info {
+    display: inline-block;
+    padding: 20px 35px 20px 20px; }
+    .trip .trip-info .trip-name {
+      font-size: 20px;
+      font-weight: bold;
+      display: inline-block; }
+    .trip .trip-info .trip-price {
+      font-size: 20px;
+      font-weight: bold;
+      text-align: right;
+      display: inline-block;
+      float: right; }
+    .trip .trip-info .trip-duration {
+      font-size: 14px; }
+    .trip .trip-info .trip-description-container {
+      margin-top: 20px; }
+      .trip .trip-info .trip-description-container .book-btn {
+        float: right;
+        padding: 5px 30px;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: black; }
+        @media screen and (max-width: 600px) {
+          .trip .trip-info .trip-description-container .book-btn {
+            float: left;
+            width: 350px; } }
+
+/*# sourceMappingURL=scssconv.css.map */
