@@ -1,0 +1,175 @@
+$highlight_color:#0099ff;//Variables
+$white_color:#fff;
+$text_color:#303030;
+$grey_highlight:#818181;
+$bgcolor_iphone8:#faf0ea;
+$bg_jumbotron:#f2f2f2;
+$bg_grey:#f6f6f6;
+$htext_color:black;
+
+
+
+  .navbar {
+      margin-bottom: 0;
+      background-color:$htext_color;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+    a{
+      color:$white_color !important;
+      
+      &:hover{
+      color:$highlight_color !important;
+    }
+    }
+    navbar-brand{
+      color:$white_color !important;
+    }
+    
+    .navbar-nav{ 
+     li.active a {
+      color:$highlight_color !important;
+    background-color:$white_color !important;
+      } 
+      }
+    .navbar-default {
+      navbar-toggle {
+      border-color: transparent;
+      color:$white_color !important;
+      }
+      }
+      }
+
+    .jumbotron_default{ //Mixin
+      color:$htext_color;
+      padding: 100px 25px;
+      font-family: Montserrat, sans-serif;  
+      }
+
+    .jumbotron {
+        @extend.jumbotron_default;
+        background-color:$bg_jumbotron;
+      }
+
+    #second_jumbotron
+      {
+    @extend.jumbotron_default;
+    background-color:$bgcolor_iphone8;
+    height: 650px;
+      }
+
+    body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color:$grey_highlight;
+      }
+    h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color:$text_color;
+      font-weight: 600;
+      margin-bottom: 30px;
+      }
+    h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color:$text_color;
+      font-weight: 400;
+      margin-bottom: 30px;
+      }  
+
+    .container-fluid {
+      padding: 60px 50px;
+      }
+    .bg-grey {
+      background-color:$bg_grey;
+      }
+    .panel {
+      border: 1px solid $highlight_color; 
+      border-radius:0 !important;
+      transition: box-shadow 0.1s;
+      &:hover {
+      box-shadow: 5px 0px 40px rgba(2,2,2, 1);
+      }
+
+    .panel-heading {
+      color:$white_color !important;
+      background-color:$highlight_color !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      }
+    
+     .panel-footer {
+      background-color: white !important;
+
+      h3 {
+      font-size: 32px;
+      }
+
+      h4 {
+      color: #aaa;
+      font-size: 14px;
+        }
+
+      .btn {
+      margin: 15px 0;
+      background-color:$highlight_color;
+      color:$white_color;
+      &:hover {
+      border: 1px solid $highlight_color;
+      background-color:$white_color !important;
+      color: $highlight_color;
+      }    
+      }
+      }
+      }
+
+      footer {
+      glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color:$highlight_color;
+      }
+      }
+  
+      .slideanim {visibility:hidden;}
+      .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+      } 
+      @keyframes slide {
+      0% {
+      opacity: 0;
+      transform: translateY(70%);
+      } 
+      100% {
+      opacity: 1;
+      transform: translateY(0%);
+      }
+      }
+      @media screen and (max-width: 768px) {
+      .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+      }
+      .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+      }
+      }
+      @media screen and (max-width: 480px) {
+      .logo {
+      font-size: 150px;
+        }
+      }
