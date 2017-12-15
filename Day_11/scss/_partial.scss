@@ -1,0 +1,22 @@
+.testpartial{
+height: 300px;  
+}
+.testpartial1{
+  @extend.testpartial;
+  background-color: red;
+}
+.testpartial2{
+  @extend.testpartial;
+  background-color: white;
+}
+.testpartial3{
+  @extend.testpartial;
+  background-color: lawngreen;
+}
+
+
+
+
+
+
+
