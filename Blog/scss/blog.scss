@@ -1,0 +1,90 @@
+.Header {
+    background-color: black;
+    background: linear-gradient(90deg,rgb(0,0,0),rgb(110,110,110));
+    height: 200px;
+    color: white;
+    p {
+        font-size: 50px;
+    }
+    #dropdownMenu2 {
+        background-color: rgb(110,110,110);
+        text-align: left;
+        height: 50px;
+        border-radius: 10px;
+        border-color: gray;
+        .glyphicon-menu-down {
+            float: right;
+        }
+    }
+}
+.text {
+    color: black*0.8;
+    letter-spacing: 1px;
+    line-height: 150%;
+    font-size: 25px;
+}
+.box {
+    box-shadow: 5px 5px 50px 5px rgba(2,2,2,0.3);
+    min-height: 170px;
+    margin-bottom: 30px;
+}
+.boxtop {
+    box-shadow: 5px 5px 50px 5px rgba(2,2,2,0.3);
+    min-height: 170px;
+}
+.details {
+    font-weight: 600;
+    line-height: 150%;
+}
+.typetextbox {
+    background-color: bisque;
+    box-shadow: 5px 5px 50px 5px rgba(2,2,2,0.5);
+}
+.text-warning {
+    color: gold;
+}
+.twitteradd {
+    background-color: deepskyblue*1.1;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 5px 5px 50px 5px rgba(2,2,2,0.5);
+    margin-bottom: 30px;
+    h1 {
+        font-size: 40px;
+        font-weight: 100;
+    }
+    h3 {
+        font-size: 30px;
+        font-weight: 100;
+        span {
+            font-weight: 400;
+        }
+    }
+    .btn {
+        border-radius: 50px;
+        color: skyblue;
+        font-size: 20px;
+        font-weight: bold;
+        .fa {
+            font-size: 25px;
+        }
+    }
+}
+a {
+    font-size: 20px;
+    color: black;
+}
+.row {
+    background-color: whitesmoke;
+    h4 {
+        font-weight: 500;
+        line-height: 200%;
+        border-bottom: 2px solid grey*1.6;
+    }
+    p {
+        font-weight: 300;
+        color: grey*1.2;
+        font-size: 20px;
+        line-height: 150%;
+    }
+}
