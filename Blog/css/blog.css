@@ -9,12 +9,12 @@
     background-color: #6e6e6e;
     text-align: left;
     height: 50px;
-    border-radius: 10px;
+    border-radius: 2px;
     border-color: gray; }
     .Header #dropdownMenu2 .glyphicon-menu-down {
       float: right; }
 
-.text {
+.text, .testimonial .border span, .input-group .text {
   color: black;
   letter-spacing: 1px;
   line-height: 150%;
@@ -26,8 +26,139 @@
   margin-bottom: 30px; }
 
 .boxtop {
-  box-shadow: 5px 5px 50px 5px rgba(2, 2, 2, 0.3);
-  min-height: 170px; }
+  min-height: 170px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid grey; }
+
+.box-text {
+  line-height: 200%;
+  font-size: 18px; }
+
+.highlight-box, .light-box {
+  background-color: #f3f3f3;
+  border-left: 5px solid black;
+  margin-bottom: 30px; }
+  .highlight-box span, .light-box span {
+    font-weight: 200;
+    line-height: 150%;
+    letter-spacing: 1px;
+    font-style: italic; }
+  .highlight-box i, .light-box i {
+    font-size: 25px;
+    letter-spacing: 15px;
+    color: gray; }
+
+.light-box {
+  background-color: white;
+  box-shadow: 2px 2px 2px 2px rgba(2, 2, 2, 0.3); }
+  .light-box span {
+    font-style: normal;
+    font-weight: 400;
+    color: gray; }
+
+.testimonial {
+  margin-bottom: 30px; }
+  .testimonial p {
+    font-weight: 800; }
+    .testimonial p span {
+      font-weight: 400; }
+  .testimonial .border {
+    border: 2px solid black;
+    border-radius: 5px; }
+    .testimonial .border span {
+      font-size: 20px;
+      font-style: italic;
+      color: black;
+      font-weight: 200; }
+
+.input-group {
+  border: 2px solid lightblue;
+  border-radius: 5px;
+  background-color: white;
+  margin-bottom: 30px; }
+  .input-group .input-group-btn {
+    border-right: 2px solid lightblue;
+    background-color: lightgrey; }
+    .input-group .input-group-btn .glyphicon {
+      margin: 0px 10px 0px 10px;
+      color: #9cc2cf; }
+  .input-group .testimonial .border span, .testimonial .border .input-group span, .input-group .text {
+    font-size: 15px;
+    margin-left: 10px;
+    font-weight: bolder; }
+    .input-group .testimonial .border span span, .testimonial .border .input-group span span, .input-group .text span {
+      font-weight: 500; }
+
+.button-list {
+  margin-bottom: 30px; }
+  .button-list .btn {
+    border-radius: 20px; }
+  .button-list .purple {
+    background-color: #a47ad6;
+    border-color: #a47ad6; }
+  .button-list .green {
+    background-color: #53b59e;
+    border-color: #53b59e; }
+  .button-list .blue {
+    background-color: #5d8fbb;
+    border-color: #5d8fbb; }
+
+.border-line {
+  margin-top: 30px;
+  border-top: 2px solid #cdcdcd; }
+
+.social-button-list {
+  border-top: 2px solid #cdcdcd;
+  border-bottom: 2px solid #cdcdcd;
+  margin-bottom: 30px; }
+  .social-button-list i {
+    font-size: 25px; }
+  .social-button-list .facebookshare {
+    background-color: #3b5998;
+    border: 0px; }
+  .social-button-list .tweet {
+    background-color: deepskyblue;
+    border: 0px; }
+  .social-button-list .comments {
+    background-color: black;
+    border: 0px; }
+
+.comment h4 i {
+  color: white;
+  background-color: red;
+  border: 2px solid red;
+  border-radius: 30px;
+  margin-right: 10px; }
+.comment h4 span {
+  color: grey;
+  font-size: 15px; }
+.comment h5 i {
+  color: red; }
+.comment h5 span {
+  color: grey;
+  font-size: 10px; }
+.comment h5 .score {
+  font-size: 20px;
+  background-color: lightgray;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 5px; }
+.comment .icons .circle {
+  border-radius: 50%;
+  margin: 0.15em;
+  font-size: 3em; }
+.comment .icons .fa-twitter {
+  background: #4099FF;
+  color: #FFFFFF;
+  padding: 5px 6px; }
+.comment .icons .fa-google-plus {
+  color: #FFFFFF;
+  background: #dd4b39;
+  padding: 5px 1px; }
+.comment .icons .fa-facebook {
+  background: #3B5998;
+  color: #FFFFFF;
+  padding: 5px 12px; }
 
 .details {
   font-weight: 600;
