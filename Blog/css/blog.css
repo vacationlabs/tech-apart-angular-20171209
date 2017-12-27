@@ -30,7 +30,7 @@
   margin-bottom: 30px;
   border-bottom: 1px solid grey; }
 
-.box-text {
+.box-text, .box-text-design {
   line-height: 200%;
   font-size: 18px; }
 
@@ -70,6 +70,8 @@
       font-style: italic;
       color: black;
       font-weight: 200; }
+  .testimonial .caption {
+    margin-top: -10px; }
 
 .input-group {
   border: 2px solid lightblue;
@@ -160,6 +162,21 @@
   color: #FFFFFF;
   padding: 5px 12px; }
 
+.box-text-design {
+  border-top: 1px solid grey;
+  margin-bottom: 30px; }
+  .box-text-design h1 {
+    margin-left: 5px; }
+    .box-text-design h1 span {
+      background-color: darkslategrey;
+      padding: 25px;
+      margin-right: 10px;
+      color: white;
+      border-radius: 0px 0px 30px 30px; }
+
+.menu {
+  border: 1px solid grey; }
+
 .details {
   font-weight: 600;
   line-height: 150%; }
@@ -230,5 +247,25 @@ a {
     color: #9a9a9a;
     font-size: 20px;
     line-height: 150%; }
+
+.testimonial-image-top {
+  height: 40px;
+  width: 40px;
+  position: relative;
+  top: -10px;
+  left: -30px;
+  background-color: white;
+  margin-right: -20px;
+  padding-bottom: 10px; }
+
+.testimonial-image-bottom {
+  height: 50px;
+  width: 50px;
+  position: relative;
+  top: -20px;
+  left: 1px;
+  background-color: white;
+  margin-right: -20px;
+  padding: 5px; }
 
 /*# sourceMappingURL=blog.css.map */
