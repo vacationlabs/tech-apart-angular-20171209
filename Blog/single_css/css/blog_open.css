@@ -1,0 +1,131 @@
+@font-face {
+  font-family: myFont;
+  src: url(font/simple.otf); }
+.smalltext {
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 150%; }
+
+.greentext {
+  color: lightseagreen; }
+
+.bluetext {
+  color: deepskyblue; }
+
+.redtext {
+  color: firebrick; }
+
+.greytext {
+  color: #bebebe;
+  font-weight: 200; }
+
+.shadow {
+  box-shadow: 0px 0px 50px 1px grey; }
+
+.mediumtext {
+  font-size: 20px;
+  line-height: 200%;
+  font-weight: 300; }
+
+.bigtext {
+  font-size: 30px;
+  line-height: 150%;
+  text-align: left;
+  color: #545454; }
+
+.box {
+  box-shadow: 1px 1px 5px 5px rgba(193, 193, 193, 0.5);
+  margin-bottom: 30px;
+  border-radius: 5px; }
+
+.simple-text-box {
+  background: linear-gradient(#fffaff, white); }
+
+.border {
+  min-height: 30px;
+  border-bottom: 3px solid lightgrey;
+  margin-bottom: 30px; }
+  .border p {
+    font-size: 50px;
+    color: lightgrey;
+    padding: 1px;
+    top: 60px;
+    position: relative; }
+
+.Header {
+  background-color: black;
+  background: linear-gradient(90deg, black, #6e6e6e);
+  height: 200px;
+  color: white; }
+  .Header p {
+    font-size: 50px;
+    font-family: myFont;
+    margin-top: 10px; }
+  .Header #dropdownMenu2 {
+    background-color: #6e6e6e;
+    text-align: left;
+    height: 50px;
+    border-radius: 2px;
+    border-color: gray;
+    font-family: myFont;
+    font-size: 15px; }
+    .Header #dropdownMenu2 .glyphicon-menu-down {
+      float: right; }
+  .Header .dropdown-item {
+    background-color: black; }
+
+.carousel-inner {
+  margin-top: -322px; }
+
+.twitteradd {
+  background-color: deepskyblue;
+  border-radius: 5px;
+  color: white;
+  box-shadow: 5px 5px 50px 5px rgba(2, 2, 2, 0.5);
+  margin-bottom: 30px; }
+  .twitteradd h1 {
+    font-size: 40px;
+    font-weight: 100; }
+  .twitteradd h3 {
+    font-size: 30px;
+    font-weight: 100; }
+    .twitteradd h3 span {
+      font-weight: 400; }
+  .twitteradd .btn {
+    border-radius: 50px;
+    color: #73afc8;
+    font-size: 20px;
+    font-weight: bold; }
+    .twitteradd .btn .fa {
+      font-size: 25px; }
+
+a {
+  font-size: 20px;
+  color: black; }
+
+.row {
+  background-color: whitesmoke;
+  padding-top: 30px; }
+  .row h4 {
+    font-weight: 500;
+    line-height: 200%;
+    border-bottom: 2px solid #cdcdcd;
+    margin-left: 40px;
+    margin-right: 40px; }
+  .row p {
+    font-weight: 300;
+    color: #9a9a9a;
+    font-size: 20px;
+    line-height: 150%;
+    margin-left: 40px; }
+
+.greenbox {
+  background-color: #1da099;
+  color: white;
+  min-height: 100px;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px; }
+
+/*# sourceMappingURL=blog_open.css.map */
