@@ -1,0 +1,75 @@
+@font-face {
+  font-family: myFont;
+  src: url(font/simple.otf); }
+/*HEADER STARTS HERE*/
+.header {
+  background-color: black;
+  background: linear-gradient(90deg, black, #6e6e6e);
+  min-height: 250px;
+  width: 1500px; }
+  .header .title {
+    color: white;
+    font-family: myfont;
+    font-size: 40px;
+    padding-top: 20px; }
+  .header .menu {
+    padding-top: 40px; }
+    .header .menu .btn-link {
+      color: white; }
+    .header .menu .btn-default {
+      border-radius: 25px; }
+
+/*HEADER ENDS HERE*/
+.component {
+  box-shadow: 0px 0px 5px 1px grey;
+  border-radius: 5px;
+  background-color: white; }
+
+.bigtext {
+  font-size: 30px;
+  line-height: 150%;
+  text-align: left;
+  color: #545454; }
+
+.smalltext {
+  font-size: 20px;
+  line-height: 150%;
+  text-align: left;
+  color: #7e7e7e; }
+
+.micro-header {
+  font-size: 20px;
+  line-height: 150%;
+  text-align: left;
+  color: deepskyblue;
+  margin-top: 20px;
+  font-weight: 900; }
+
+.text-box {
+  background-color: white;
+  background: white; }
+
+#myCarousel {
+  margin-top: -150px; }
+
+a {
+  font-size: 20px;
+  color: black; }
+
+.row {
+  background-color: whitesmoke;
+  padding-top: 30px; }
+  .row h4 {
+    font-weight: 500;
+    line-height: 200%;
+    border-bottom: 2px solid #cdcdcd;
+    margin-left: 40px;
+    margin-right: 40px; }
+  .row p {
+    font-weight: 300;
+    color: #9a9a9a;
+    font-size: 20px;
+    line-height: 150%;
+    margin-left: 40px; }
+
+/*# sourceMappingURL=blog_home.css.map */
