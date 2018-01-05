@@ -1,0 +1,270 @@
+@font-face {
+    font-family:myFont;
+    src: url(font/ProximaNova-Regular.otf);
+  
+}
+//all extends and mixins//
+.smalltext{
+  font-size: 13px;
+  font-weight:bold;
+  line-height:16px;
+    font-family: myFont;
+
+  
+  
+}
+
+.smalltexts{
+  color: #999999;	
+  font-size: 14px;	
+  line-height: 19px;
+    font-family:myFont;
+
+}
+
+
+
+.yellowtext{
+    color:#F8BC5B;
+  }
+  .bluetext{
+    color: #70B1EB;
+  }
+.redtext{
+  color:#C75F5F;
+}
+.greybold{
+  color:#c2c2c2;
+}
+.greytext{
+  color: lightgray*0.9;
+  font-weight: 200;
+}
+.greentext{
+  color: #46CDAF;
+}
+
+.mediumtext{
+  font-size: 20px;
+  line-height: 150%;
+    font-family:myFont;
+
+  
+  
+}
+.bigtext{
+  text-align:left;
+  color:#545454;
+  font-family:myFont;
+  font-size: 24px;	
+  font-weight: 800;
+  line-height: 28px;
+  color: #333333;
+  padding-top: 10px;
+  
+  
+}
+
+.bigtext_1{
+  @extend.bigtext;
+  line-height: 33px;
+  font-size: 24px;
+  font-size: 24px;	
+  font-weight: 500;
+  line-height: 33px;
+    font-family: myFont;
+
+  
+}
+
+
+
+
+.box{
+    box-shadow: 1px 1px 5px 5px rgba(193,193,193,0.5);
+  
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.2);
+  
+  margin-bottom: 30px;
+  border-radius: 5px;
+  background-color: white;
+  background-color: white;
+}
+
+
+.simple-text-box{
+background: linear-gradient(pink*1.3,white);
+  
+
+}
+
+.border{
+  min-height: 30px;
+  border-bottom: 2px solid lightgrey;
+  margin-bottom: 10px;
+  margin-top: -75px;
+  p{
+    font-size: 50px;
+    color: lightgrey;
+    padding:1px;
+    top: 40px;
+    position: relative;
+    
+  }  
+}
+
+
+//Css for header starts here//
+.Header {
+  
+  background: linear-gradient(132.59deg, #000000 0%, #535863 100%);
+    height: 364px;
+    color: white;
+    p {
+        font-size: 50px;
+      font-family: myFont;
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+    #dropdownMenu2 {
+        background-color:#333333;
+        text-align: left;
+        height: 44px;
+        border-radius: 2px;
+        border-color: black;
+      font-family: myFont;
+      font-size: 12px;
+        margin-bottom: 47px;
+        .glyphicon-menu-down {
+            float: right;
+        }
+    }
+  .dropdown-item{
+    background-color: black;
+  }
+  
+  
+}
+
+.logo{
+  margin-left: 25px;
+}
+
+
+.Header2{
+  @extend.Header;
+  height: 160px;
+}
+
+.jumbotext{
+	
+	color: #333333;
+	font-size: 36px;
+	font-weight: 400;
+	line-height: 43px;
+
+  
+  
+}
+
+.h1, .h2, .h3, h1, h2, h3, p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+
+
+.vl-logo{	
+  height: 29px;
+  width: 255.59px;
+  background-color: #FFFFFF;
+}
+
+//css for header ends here//
+
+//css for carousel//
+.carousel-inner{
+  margin-top: -322px;  
+}
+//css ends for carousel//
+
+
+//css for twitter starts here//
+.twitteradd {
+    background-color: deepskyblue*1.01;
+    border-radius: 5px;
+    color: white;
+box-shadow: 0 1px 4px 0 rgba(0,0,0,0.2);
+    margin-bottom: 30px;
+    h1 {
+        font-size: 29px;
+        font-weight: 400;
+        margin-left: 7px;
+    }
+    h3 {
+        font-size: 22px;
+        font-weight: 100;
+      line-height: 26px;
+        margin-left: 7px;
+
+        span {
+                  font-size: 22px;
+
+            font-weight: 400;
+        }
+    }
+  h4{
+    font-size: 17px;
+    font-weight: 400;
+    
+    
+  }
+  
+  
+    .btn {
+        border-radius: 50px;
+        height: 42px;
+        color: deepskyblue;
+        font-size: 17px;
+        font-weight: bold;
+      .fa {
+            position: relative;
+            top:1px;
+            font-size: 20px;
+        }
+    }
+}
+
+
+
+//css for twitter ends here//
+
+//css for footer starts here//
+a {
+    font-size: 20px;
+    color: black;
+}
+.row {
+    margin-top: 40px;
+    background-color:#F6F9FC;
+    padding-top: 30px;
+    h4 {
+        font-weight: 500;
+        line-height: 200%;
+        border-bottom: 1px solid grey*1.6;
+        margin-left: 20px;
+        margin-right: 20px;
+      color: #505E6E;
+    }
+    p {
+        font-weight: 400;
+        color:#7085A1;
+        font-size: 14px;
+        line-height: 290%;
+        margin-left: 20px;
+    }
+}
+//css for footer ends here//
+
+
