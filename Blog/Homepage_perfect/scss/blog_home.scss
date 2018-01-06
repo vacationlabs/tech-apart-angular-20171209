@@ -5,9 +5,9 @@
 }
 //all extends and mixins//
 .smalltext{
-  font-size: 13px;
+  font-size: 0.92em;
   font-weight:bold;
-  line-height:16px;
+  line-height:1.14em;
     font-family: myFont;
 
   
@@ -45,7 +45,7 @@
 }
 
 .mediumtext{
-  font-size: 20px;
+  font-size:1.42em;
   line-height: 150%;
     font-family:myFont;
 
@@ -56,9 +56,9 @@
   text-align:left;
   color:#545454;
   font-family:myFont;
-  font-size: 24px;	
+  font-size: 1.4em;	
   font-weight: 800;
-  line-height: 28px;
+  line-height: 1.4em;
   color: #333333;
   padding-top: 10px;
   
@@ -67,14 +67,18 @@
 
 .bigtext_1{
   @extend.bigtext;
-  line-height: 33px;
-  font-size: 24px;
-  font-size: 24px;	
-  font-weight: 500;
-  line-height: 33px;
+  line-height:2.35em;
+  font-size: 1.71em;
+  font-size: 1.71em;	
+  font-weight: 600;
+  line-height: 1.4em;
     font-family: myFont;
 
   
+}
+
+.top-image{
+  border-radius: 3px 3px 0px 0px;
 }
 
 
@@ -203,7 +207,7 @@ box-shadow: 0 1px 4px 0 rgba(0,0,0,0.2);
         margin-left: 7px;
     }
     h3 {
-        font-size: 22px;
+        font-size: 1.57em;
         font-weight: 100;
       line-height: 26px;
         margin-left: 7px;
