@@ -1,0 +1,1072 @@
+@font-face {
+    font-family:myFont;
+    src: url(font/ProximaNova-Regular.otf);
+  
+}
+//all extends and mixins//
+.smalltext{
+  font-size: 0.92em;
+  font-weight:500;
+  line-height:1.14em;
+  font-family: "Avenir Next";
+
+  
+  
+}
+
+.smalltexts{
+  color: #999999;	
+  font-size: 14px;	
+  line-height: 19px;
+font-family: "Proxima Nova";
+//font-family: "Proxima Nova";
+
+}
+
+
+
+.yellowtext{
+    color:#F8BC5B;
+  }
+  .bluetext{
+    color: #70B1EB;
+  }
+.redtext{
+  color:#C75F5F;
+}
+.greybold{
+  color:#c2c2c2;
+}
+.greytext{
+  color: lightgray*0.9;
+  font-weight: 200;
+}
+.greentext{
+  color: #46CDAF;
+}
+
+.mediumtext{
+  font-size:1.42em;
+  line-height: 150%;
+    font-family:myFont;
+
+  
+  
+}
+.bigtext{
+  text-align:left;
+  color:#545454;
+  font-family:myFont;
+  font-size: 1.4em;	
+  font-weight: 800;
+  line-height: 1.4em;
+  color: #333333;
+  padding-top: 10px;
+  
+  
+}
+
+.bigtext_1{
+  @extend.bigtext;
+  line-height:2.35em;
+  font-size: 1.71em;
+  font-size: 1.71em;	
+  font-weight: 600;
+  line-height: 1.4em;
+    font-family: myFont;
+
+  
+}
+
+.top-image{
+  border-radius: 3px 3px 0px 0px;
+}
+
+
+
+
+.box{
+    box-shadow: 1px 1px 5px 5px rgba(193,193,193,0.5);
+  
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.2);
+  
+  margin-bottom: 30px;
+  border-radius: 5px;
+  background-color: white;
+  background-color: white;
+}
+
+
+.simple-text-box{
+background: linear-gradient(pink*1.3,white);
+  
+
+}
+
+.border{
+  min-height: 30px;
+  border-bottom: 2px solid lightgrey;
+  margin-bottom: 10px;
+  margin-top: -75px;
+  p{
+    font-size: 50px;
+    color: lightgrey;
+    padding:1px;
+    top: 40px;
+    position: relative;
+
+
+    
+  }  
+}
+
+.highlight-box{
+  background-color:#f9f9f9;
+  border-left:4px solid black;
+  margin-bottom: 30px;
+  
+  
+  p{
+   // height: 96px;
+  //  width: 296px;
+    padding-top: 10px;
+    color: #333333;
+    font-family: "Avenir Next";
+    font-size: 20px;
+    line-height: 32px;
+    
+  }
+  i{
+    font-size:20px;
+	//height: 16px;
+	//width: 19.05px;
+	color: rgba(102,102,102,0.5);
+    letter-spacing: 15px;
+    
+    
+  }
+  span{
+    font-weight: 600;
+  }
+
+  }
+  
+.simple_text{
+	//height: 125px;
+	//width: 345px;
+	color: #333333;
+	font-family: "Avenir Next";
+	font-size: 16px;
+	line-height: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.text_bcimage{
+  background-image:url("pic.jpg");
+//margin-top: -20px;  
+  .image_quote{
+    font-size: 30px;
+    position: relative;
+    top:30px;
+    left: -30px;
+    
+  }
+  
+  
+  
+  
+  p{
+    padding-left: 30px;
+	color: #FFFFFF;
+	font-family: "Proxima Nova";
+    font-weight: 200;
+	font-size: 24px;
+	font-style: italic;
+	line-height: 29px;
+    padding-bottom: 20px;
+  }
+  
+  .text_inside{
+	//height: 18px;
+	//width: 246px;
+	color: #FFFFFF;
+	font-family: "Proxima Nova";
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 18px;
+    font-style: normal;
+    margin-top: -25px;
+    
+    span{
+      font-weight: 300;
+    }
+    
+  }
+  
+    i{
+    padding-left: 30px;  
+    font-size:20px;
+	//height: 16px;
+	//width: 19.05px;
+	color:#FFFFFF;
+    letter-spacing: -10px;
+      padding-bottom: 30px;
+          margin-top: -25px;
+
+    
+    
+  }
+  
+  
+}
+
+.testimonial{
+    margin-bottom: 30px;
+    margin-top: 100px;
+   p{
+	color: #333333;
+	font-family: "Proxima Nova";
+	font-size: 13px;
+	font-weight: 600;
+	line-height: 16px;
+     
+     span{
+       font-weight: 400;
+     }
+  }
+
+
+.border{
+  border: 2px solid black;
+  border-radius: 5px;
+  
+  span{
+	//width: 295px;
+	color: #333333;
+	font-family: "Proxima Nova";
+	font-size: 18px;
+	font-style: italic;
+	line-height: 25px;
+        
+  }
+ 
+  
+}
+  
+.caption{
+  margin-top: -10px;
+}  
+  
+  
+  
+  
+}
+.testimonial-image-top{
+  height:25px;
+  width: 25px;
+  position: relative;
+  top: -10px;
+  left: -20px;
+  background-color:white;
+  margin-right: -20px;
+  padding-bottom:10px;
+ 
+  i{
+    font-size: 20px;
+  }
+  
+}
+
+.testimonial-image-bottom{
+  height: 40px;
+  width: 40px;
+  position: relative;
+  top: -20px;
+  left: 1px;
+  background-color:white;
+  margin-right: -20px;
+  padding: 5px;
+}
+
+.author_name{
+	//height: 16px;
+	//width: 213px;
+	color: #333333;
+	font-family: "Proxima Nova";
+	font-size: 13px;
+	font-weight: 600;
+	line-height: 16px;
+  .a_name{
+    font-weight: 200;
+    font-family: "Proxima Nova";
+	font-size: 10px;
+	line-height: 16px;
+  }
+  
+  
+}
+
+.testimonial-logo-bottom{
+  position: relative;
+  top:-15px;
+  left: 25px;
+  background-color:aqua;
+  height: 0px;
+  //width: 10px;
+  
+  i{
+    font-size: 20px;
+    background-color:white;
+    padding: 5px;
+  }
+
+}
+
+
+
+
+
+
+
+.icons{
+      margin-top: 10px;
+  margin-bottom: 10px;
+    font-size:20px;
+	//height: 16px;
+	//width: 19.05px;
+	color:#E6E6E6;
+    letter-spacing: 10px;
+}
+
+
+
+
+.box-text-design{
+  border-top: 1px solid grey;
+  margin-bottom: 30px;
+   
+  .bullet_headline{
+    	color: #333333;
+	font-family: "Proxima Nova";
+	font-size: 26px;
+	font-weight: 600;
+	line-height: 31px;
+    margin-top: 17px;
+    margin-left: 35px;
+    position: relative;
+    text-align: left;
+    
+    
+  }
+  
+  
+  
+  
+  
+  
+  
+  h1{
+	color: #333333;
+	font-family: "Proxima Nova";
+	font-size: 26px;
+	font-weight: 600;
+	line-height: 31px;
+    margin-top: 7px;
+    position: relative;
+    text-align: left;
+    
+    span{
+      background-color: #495469;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 29px;
+      border-radius: 0px 0px 30px 30px;
+      font-size: 28px;
+      position: relative;
+      top: 16px;
+      padding-bottom: 10px;
+      
+
+	color: #FFFFFF;
+	font-family: "Proxima Nova";
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 40px;
+
+    }
+    
+  }
+  
+}
+
+.simpletext{
+	//height: 225px;
+	//width: 345px;
+	color: #333333;
+	font-family: "Avenir Next";
+	font-size: 16px;
+	line-height: 25px;
+  span{
+    font-weight: 600;
+  }
+  
+  
+}
+
+.alert_text{
+	//height: 102px;
+	//width: 345px;
+	color: #171D27;
+	font-family: "Avenir Next";
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 34px;
+}
+
+
+
+
+.light-box{
+  margin-top: 25px;
+  @extend .highlight-box;
+  background-color: white;
+  box-shadow: 2px 2px 2px 2px rgba(2,2,2,0.3);
+  min-height: 70px;
+  
+  p{
+     font-style: normal;
+    font-weight: 400;
+    color: gray;
+  
+	color: #333333;
+	font-family: "Avenir Next";
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 25px;
+  
+  
+  span{
+    font-style: normal;
+    font-weight: 400;
+    color: gray;
+  
+	color: #333333;
+	font-family: "Avenir Next";
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 25px;
+    text-decoration: underline;
+  }
+}
+}
+
+  .input-group{
+border: 2px solid #D6E0E9;
+    border-radius: 5px;
+    background-color:white;
+    margin-bottom: 30px;
+
+.input-group-btn{
+  border-right: 2px solid #D6E0E9;
+  background-color:#F4F7FA;
+  
+  .glyphicon{
+  margin: 0px 10px 0px 10px;
+  color:#95AFC7;
+}
+  
+}
+    .text{
+       font-style: normal;
+    font-weight: 400;
+    color: gray;
+  
+	color: #333333;
+	font-family: "Avenir Next";
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+      
+      span{
+  font-style: normal;
+    font-weight: 400;
+    color: gray;
+  
+	color: #333333;
+	font-family: "Avenir Next";
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 25px;
+    text-decoration: underline;        
+      }
+    }
+}
+
+.red_textbox{
+ 	border-top: 1px solid #C86262;
+	background: linear-gradient(180deg, rgba(199,95,95,0.05) 0%, rgba(255,255,255,0) 100%);
+    margin-bottom: 30px;
+  
+  .red_textbox_heading{
+	color: #4A4A4A;
+	font-family: "Proxima Nova";
+	font-size: 26px;
+	font-weight: 600;
+	line-height: 31px;
+    //margin-top: 30px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    
+    
+  }
+
+  .red_textbox_body{
+        padding-left: 10px;
+
+	color: #333333;
+	font-family: "Avenir Next";
+	font-size: 16px;
+	line-height: 25px;
+    
+  }
+
+  .fa-user-circle-o{
+    color: #C86262;
+    font-size: 30px;
+    padding-top: 13px;
+    height: 60px;
+    width: 60px;
+    background-color:#FCF7F7;
+    position: relative;
+    top: -25px;
+    left: 15px;
+    border: 1px solid #C86262;
+  }
+
+
+
+
+
+}
+
+
+
+.button-list{
+  margin-top: 30px;
+  
+
+
+
+.btn{
+  border-radius: 20px;
+}
+
+  .purple{
+    background-color:rgb(164,122,214);
+    border-color:rgb(164,122,214);
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 400;
+  }
+  .green{
+    background-color:rgb(83,181,158);
+        border-color:rgb(83,181,158);
+    	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 15px;
+    font-weight: 400;
+
+  }
+.blue{
+  background-color:rgb(93,143,187); 
+    border-color:rgb(93,143,187); 
+  	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 15px;
+      font-weight: 400;
+
+
+}
+}
+
+.social-button-list{
+  
+    border-top: 2px solid grey*1.6;
+   // border-bottom: 2px solid grey*1.6;
+    margin-bottom: 30px;
+  
+  
+  
+  .facebookshare{
+    background-color:rgb(59,89,152);
+    border-radius: 2px;
+    font-size: 13px;
+    i{
+    font-size: 14px;
+    }
+  }
+  .tweet{
+    background-color: deepskyblue;
+  
+  border-radius: 2px;
+    font-size: 13px;
+    i{
+    font-size: 14px;
+    }
+  }
+  
+  .comments{
+    background-color: black;
+  border-radius: 2px;
+    font-size: 13px;
+    i{
+    font-size: 14px;
+    }
+  }
+  
+}
+
+.comment{
+  //border: 1px solid black;
+  background-color:#EFEFEF;
+  margin-bottom: 20px;
+    
+  h4{
+    font-size: 14px;
+    
+    
+  i{
+    color:white;
+    background-color: red;
+    border: 2px solid red;
+    border-radius: 30px;
+    margin-right: 10px;
+    font-size: 10px;
+  }
+    span{
+      color: grey;
+      font-size: 10px;
+        
+    }
+  }
+
+  h6{
+    i{
+      color:red;
+    }
+    span{
+      color: grey;
+      font-size: 10px;
+    }
+    
+    .score{
+      font-size: 12px;
+      background-color:lightgray;
+      padding-left:5px;
+      padding-right: 5px;
+      border-radius: 5px;
+    }
+  }
+  .icons{
+  .circle{
+	border-radius: 50%;
+	margin: 0.15em;
+	font-size: 3em;
+	}
+
+.fa-twitter{
+	background: #4099FF;
+	color: #FFFFFF;
+  padding: 7px 5px;
+  font-size: 20px;
+  height: 35px;
+  width: 35px;
+	}
+
+.fa-google-plus{
+  color: #FFFFFF;
+  background: #dd4b39;
+  padding: 5px 1px;
+    font-size: 20px;
+  height: 35px;
+  width: 35px;
+  }  
+
+.fa-facebook{
+	background: #3B5998;
+	color: #FFFFFF;
+  padding: 5px 12px;
+    font-size: 20px;
+  height: 35px;
+  width: 35px;
+	}
+  }
+}
+
+.highlight_text_onimage{
+//background-color: aqua; 
+min-height: 300px;
+  background-image:url("fall.jpg");
+  background-repeat: no-repeat;
+  //background-attachment: fixed;
+  background-position: center;
+
+  
+  
+}
+
+.highlight_text_ongradient{
+//background-color: aqua; 
+min-height: 300px;
+  //background-image:url("fall.jpg");
+  background-repeat: no-repeat;
+  //background-attachment: fixed;
+  background-position: center;
+  
+  background: linear-gradient(0deg, rgba(216,216,216,0) 0%, rgba(0,0,0,0.6) 100%);
+
+  background-color: #D8D8D8;
+  
+}
+
+
+
+.text_highlight_onimage{
+	height:50%;
+	//width: 345px;
+	color: #FFFFFF;
+	font-family: "Proxima Nova";
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 25px;
+    padding-top: 12px;
+}
+
+.simple_text_onimage{
+  position: relative;
+ // top: -75px;
+  background-color: #ffffff;
+  color: #333333;
+	font-family: "Avenir Next";
+	font-size: 16px;
+	line-height: 25px;
+  padding-top: 10px;
+  margin-right: -10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+.imagetextbox{
+  min-height: 135px;
+  //min-width:100px;
+  border: 2px solid white;
+  position: relative;
+  top: -163px;
+  background-color:white;
+  margin-top: 30px;
+}
+
+.simple_text_top{
+    position: relative;
+    top: -163px;
+    color: #333333;
+	font-family: "Avenir Next";
+	font-size: 16px;
+	line-height: 25px;
+}
+
+.text_below{
+  background-color:white;
+}
+
+.query_text{
+	//height: 52px;
+	//width: 305px;
+	color: #333333;
+	font-family: "Proxima Nova";
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 26px;
+    margin-top: -30px;
+      margin-right:-30px;
+}
+
+.query_text_main {
+	//height: 175px;
+	//width: 305px;
+	color: #333333;
+	font-family: "Avenir Next";
+	font-size: 16px;
+	line-height: 25px;
+    margin-right: -40px;
+}
+
+.bullets{
+  height: 250px;
+  width: 0px;
+  border-left: 4px dotted #DEDEDE;
+  position: relative;
+  left: 15px;
+  
+}
+
+.text_no{
+  color: #00B990;
+  font-size: 20px;
+    font-weight: 800;
+  width: 35px;
+  height: 35px;
+  position: relative;
+  background-color:white;
+  left: -50px;
+  border: 2px solid #00B990; 
+}
+
+.bullets_h{
+  height: 125px;
+  width: 0px;
+  border-left: 4px dotted #DEDEDE;
+  position: relative;
+  left: 15px;
+  
+}
+
+
+.text_no_h{
+  color: #00B990;
+  font-size: 40px;
+    font-weight: 800;
+  width: 35px;
+  height: 35px;
+  position: relative;
+  background-color:white;
+  left: -50px;
+  //border: 2px solid #00B990; 
+}
+
+.query_text_h{
+	//height: 52px;
+	//width: 305px;
+	color: #333333;
+	font-family: "Proxima Nova";
+	font-size: 26px;
+	font-weight: 600;
+	line-height: 31px;
+    margin-top: -20px;
+      margin-right:-30px;
+  
+}
+
+
+.box-text-design-photo{
+  @extend.box-text-design;
+
+
+.bullet-background{
+  height: 200px;
+  background-image: url(fall.jpg);
+    background-position: center;
+
+  
+  
+
+}
+  .bullet_headline{
+   color: white; 
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Css for header starts here//
+.Header {
+  
+  background: linear-gradient(132.59deg, #000000 0%, #535863 100%);
+    height: 364px;
+    color: white;
+    p {
+        font-size: 50px;
+      font-family: myFont;
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+    #dropdownMenu2 {
+        background-color:#333333;
+        text-align: left;
+        height: 44px;
+        border-radius: 2px;
+        border-color: black;
+      font-family: myFont;
+      font-size: 12px;
+        margin-bottom: 47px;
+        .glyphicon-menu-down {
+            float: right;
+        }
+    }
+  .dropdown-item{
+    background-color: black;
+  }
+  
+  
+}
+
+.logo{
+  margin-left: 25px;
+}
+
+
+.Header2{
+  @extend.Header;
+  height: 160px;
+}
+
+.jumbotext{
+	
+	color: #333333;
+	font-size: 36px;
+	font-weight: 400;
+	line-height: 43px;
+
+  
+  
+}
+
+.h1, .h2, .h3, h1, h2, h3, p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+
+
+.vl-logo{	
+  height: 29px;
+  width: 255.59px;
+  background-color: #FFFFFF;
+}
+
+//css for header ends here//
+
+//css for carousel//
+.carousel-inner{
+  margin-top: -322px;  
+}
+//css ends for carousel//
+
+
+//css for twitter starts here//
+.twitteradd {
+    background-color: deepskyblue*1.01;
+    border-radius: 5px;
+    color: white;
+box-shadow: 0 1px 4px 0 rgba(0,0,0,0.2);
+    margin-bottom: 30px;
+    h1 {
+        font-size: 29px;
+        font-weight: 400;
+        margin-left: 7px;
+      font-family: "Proxima Nova";
+    }
+    h3 {
+        font-size: 1.57em;
+        font-weight: 100;
+      line-height: 26px;
+        margin-left: 7px;
+      font-family: "Proxima Nova";
+
+        span {
+                  font-size: 22px;
+
+            font-weight: 400;
+        }
+    }
+  h4{
+    font-size: 17px;
+    font-weight: 400;
+    
+    
+  }
+  
+  
+    .btn {
+        border-radius: 50px;
+        height: 42px;
+        color: deepskyblue;
+        font-size: 17px;
+        font-weight: bold;
+      .fa {
+            position: relative;
+            top:1px;
+            font-size: 20px;
+        }
+    }
+}
+
+
+
+//css for twitter ends here//
+
+//css for footer starts here//
+a {
+    font-size: 20px;
+    color: black;
+}
+.row {
+    margin-top: 40px;
+    background-color:#F6F9FC;
+    padding-top: 30px;
+    h4 {
+        font-weight: 500;
+        line-height: 200%;
+        border-bottom: 1px solid grey*1.6;
+        margin-left: 20px;
+        margin-right: 20px;
+      color: #505E6E;
+    }
+    p {
+        font-weight: 400;
+        color:#7085A1;
+        font-size: 14px;
+        line-height: 290%;
+        margin-left: 20px;
+    }
+}
+//css for footer ends here//
+
+
+
